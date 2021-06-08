@@ -1,0 +1,36 @@
+/* .List ol{
+    color:white;
+    list-style-type:none;
+}
+.List li{
+
+   padding: 8px;
+   margin:5px;
+   text-align: center;
+    
+}
+.List li:hover{
+    background-color: rgb(131, 160, 102);
+    cursor: pointer;
+}
+.List{
+    width:35%;
+}
+.List li .edit {
+    color:black;
+   
+    font-size: medium;
+    box-sizing: border-box;
+    border:2px solid orange;
+    border-radius: 10px;
+    float: right;
+}
+.List li .delete {
+   
+    color:black;
+    font-size: medium;
+    box-sizing: border-box;
+    border:2px solid orange;
+    border-radius: 10px;
+    float: right;
+} */

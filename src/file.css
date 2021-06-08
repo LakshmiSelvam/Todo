@@ -1,0 +1,173 @@
+/* .App {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 50px;
+} */
+
+/* .App .title {
+  font-size: 2rem;
+  padding: 0px 20px 0px 20px; */
+  /* background-color: rgb(242, 255, 123); */
+  /* background-color: rgb(15, 37, 56); */
+  /* border-radius: 10px; */
+   
+  /* border: 2px solid rgb(253, 240, 240); */
+  /* align-self: center;
+  color: white;
+  font-family: "Covered By Your Grace", cursive;
+} */
+.title{
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
+  .todo .Completed{
+    color:green;
+    cursor: pointer;
+  }
+  
+  .todo .duetask{
+    color:white;
+    cursor: pointer;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container{
+    
+    /* background-color: linear-gradient(to right bottom,#e1b382,#c89666); */
+    background-color: #ccc;
+    width : 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .app-wrapper{
+  
+    background-color:#12343b;
+    /* background-color:blue; */
+    min-width: 450px;
+    min-height: 650px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3px 6px 40px black;
+    margin-bottom: 10px;
+  }
+    
+  
+  .Header h1{
+    color:white;
+    text-align: center;
+    margin: 30px 0px;
+  
+  }
+  .task-input{
+    outline:none;
+    width:260px;
+    padding: 15px;
+    margin-right: 25px;
+    font-size: 20px;
+    color:white;
+    /* background-color: #000000; */
+    border:1px solid #c89666;
+    border-radius: 10px;
+  
+  }
+  .task-input:hover{
+    background-color: black;
+  }
+  .button-add{
+    width:70px ;
+    padding:15px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #c89666;
+    cursor:pointer;
+  }
+  .button-update{
+    width:85px ;
+    padding:15px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #c89666;
+    cursor:pointer;
+  }
+  .list-item {
+    display: flex;
+    margin: 20px 0px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 30px;
+    background-color: #05122c;
+  }
+  /* .list-item:hover{
+    background-color: aqua;
+  } */
+  /* .button-delete{
+    border:none;
+    outline: none;
+    cursor: pointer;
+    
+    font-size: 20px;
+    border-radius: 9px; 
+  } */
+  /* .button-complete{
+    margin-right: 10px;
+    color: #e2d029;
+  } */
+  .button-edit{
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 29px; 
+    margin-right: 10px;
+    color: green;
+    background-color: #05122c;
+    /* background-color: #12343b; */
+    /* background-color: orange; */
+  }
+  .button-delete{
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #05122c;
+    /* border-radius: 29px;  */
+    /* margin-right: 10px; */
+    color:red ;
+    /* background-color: #12343b; */
+    /* background-color: red; */
+  }
+  
+  .list{
+    width: 220px;
+    background-color:#12343b;
+    border:none;
+    color:#ccc;
+    font-size:20px;
+    padding-left: 10px;
+    margin-right: 15px;
+    background-color: #05122c;
+  }
+  input:focus,
+  button:focus{
+    outline: none;
+  }
+  ol{
+    list-style-type: none ;
+  }
+  .update h1{
+    color:#ffff;
+    text-align: center;
+    padding: 12px;
+  }
+  
