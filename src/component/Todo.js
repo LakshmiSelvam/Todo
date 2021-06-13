@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './Todo.css';
+import { toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Popup from './Popup';
+
+toast.configure();
 
 const Todo = props =>{
    const [edit,setEdit]=useState({

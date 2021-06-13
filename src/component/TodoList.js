@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import AddTask from './AddTask';
 import Todo from './Todo';
+import { toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const TodoList = () =>{
     const [todos,setTodo]= useState([]);
  
@@ -8,6 +11,12 @@ const TodoList = () =>{
         const UpdateList = [...todos];
         UpdateList[index].isComplete=!UpdateList[index].isComplete;
         localStorage.setItem("taskList",JSON.stringify(UpdateList))
+        if( UpdateList[index].isComplete){
+            toast.success('Task Completed');
+        }
+        if(!UpdateList[index].isComplete){
+            toast.warning("Task Not Completed")
+        }
         setTodo(UpdateList);
     }
 
@@ -15,6 +24,7 @@ const TodoList = () =>{
          const Filterarr = [...todos];
          Filterarr.splice(index,1);
          localStorage.setItem("taskList",JSON.stringify(Filterarr))
+         toast.success("Task deleted successfully")
          setTodo(Filterarr);
     }
     const edit = (index,val) =>{
@@ -22,6 +32,7 @@ const TodoList = () =>{
        updatelist[index].text= val;
        localStorage.setItem("taskList",JSON.stringify(updatelist))
        setTodo(updatelist);
+       
     }
 
 

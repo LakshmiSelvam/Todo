@@ -8,6 +8,7 @@ const AddTask = props =>{
             text:Input,
             isComplete:false
         });
+        
         setInput('');
 
     }
